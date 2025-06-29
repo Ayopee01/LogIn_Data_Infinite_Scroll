@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 // Import components
 import Login from "./components/Login";
 
