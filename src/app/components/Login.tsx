@@ -2,15 +2,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
-import { Inter } from "next/font/google";
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/navigation";
-
-const inter = Inter({
-    subsets: ["latin"],
-    weight: ["400", "700"],
-    display: "swap",
-});
 
 type Inputs = {
     email: string;

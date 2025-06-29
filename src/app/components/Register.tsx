@@ -1,16 +1,10 @@
 "use client";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
-//import google font Inter
-import { Inter } from "next/font/google";
+
 //import useRouter
 import { useRouter } from "next/navigation";
 
-const inter = Inter({
-    subsets: ["latin"],
-    weight: ["400", "700"],
-    display: "swap",
-});
 
 type Inputs = {
     email: string;
@@ -30,7 +24,7 @@ export default function Register() {
     return (
         <form
             onSubmit={handleSubmit(onSubmit)}
-            className={`${inter.className} max-w-sm mx-auto mt-20 p-8 bg-white rounded-xl shadow-lg space-y-6`}
+            className="max-w-sm mx-auto mt-20 p-8 bg-white rounded-xl shadow-lg space-y-6"
         >
             <h2 className="text-2xl font-bold text-center text-green-700">Register</h2>
             <div>
